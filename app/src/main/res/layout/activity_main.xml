@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="SUPPLIER PO'S SHIPMENT ::250720171000438"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <!-- A RecyclerView to display list -->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mb_recycler_view"
+            android:layout_width="fill_parent"
+            android:layout_height="390dp"
+            android:paddingBottom="20dp"
+            android:scrollbars="vertical" />
+
+
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Shipment Address"
+            android:paddingLeft="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="16sp" />
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <RadioButton
+                android:id="@+id/radio_button_india"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="PAN INDIA" />
+
+            <RadioButton
+                android:id="@+id/radio_button_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="SPECIFIC STATE" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Invoice Id"
+            android:textColor="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Invoice Id"
+            android:inputType="textPersonName" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Invoice Amount"
+            android:textColor="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Invoice Amount"
+            android:inputType="number" />
+
+
+
+
+    </LinearLayout>
+</ScrollView>
